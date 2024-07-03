@@ -1,0 +1,32 @@
+.contact-section {
+    p {
+        color: var(--muted-color);
+    }
+    li{
+        color: var(--muted-color);
+    }
+
+    textarea {
+        resize: none;
+        /* border: 1px solid var(--border-color); */
+        min-height: 200px !important;
+    }
+}
+
+.contact-section .form-label {
+    position: absolute;
+    top: -14px;
+    left: 19px;
+    background: white;
+    padding: 5px;
+    font-size: 14px;
+    color: var(--muted-color);
+}
+
+.contact-section .form-control:focus {
+    box-shadow: none;
+}
+
+.contact-section .form-control {
+    padding: 15px !important;
+}

@@ -1,0 +1,12 @@
+.section-Header span{
+    color: var(--red-color);
+    font-weight: bold;
+    font-size: 14px;
+}
+.section-Header button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #f0f1f1;
+    color: #5b5b5b;
+}

@@ -1,0 +1,102 @@
+.landing {
+    padding: 100px 0;
+    background-color: #f9f3f0;
+    position: relative;
+    overflow: hidden;
+}
+
+.landing .row {
+    position: relative;
+    z-index: 3;
+}
+
+@media (min-width:992px) {
+    .landing .text {
+        transition: var(--transition);
+        margin-bottom: 0;
+        opacity: 1;
+    }
+
+    .landing .text.hidden {
+        margin-bottom: -150px;
+        opacity: 0;
+    }
+}
+
+@media (max-width:992px) {
+    .landing .text {
+        transition: var(--transition);
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    .landing .text.hidden {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+}
+
+.landing .span {
+    color: var(--red-color);
+}
+
+
+
+.landing .items .item {
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+}
+.landing .items .item::-webkit-scrollbar {
+    display: none;
+}
+.landing .items .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scroll-snap-align: start;
+}
+
+.landing .button {
+    width: 50px;
+}
+
+.landing .button span {
+    width: 10px;
+    height: 4px;
+    background: var(--red-color);
+    padding: 1px;
+    cursor: pointer;
+    transition: var(--transition);
+    border-radius: 5px;
+}
+
+.landing .button .active {
+    flex: 1;
+}
+
+.landing .texture {
+    position: absolute;
+    top: 40px;
+    right: 400px;
+    height: 66vh;
+    width: 295px;
+    /* background-color: aquamarine; */
+    transform: rotate(7deg);
+    z-index: 1;
+    background: #EBC7B5;
+    background: linear-gradient(90deg, #ebc7b500, #eeac8a87);
+    /* opacity: .5; */
+    border-radius: 10px
+}
+
+.landing .texture:nth-of-type(2) {
+    right: 159px;
+    top: 30px;
+    width: 400px;
+}
+

@@ -1,0 +1,13 @@
+.service-section p,
+.service-section h5{
+    margin: 0;
+}
+.service-section .box{
+    width: fit-content;
+    border: 2px dashed var(--border-color);
+    padding: 20px;
+    height: 110px;
+}
+.service-section svg{
+    font-size: 45px;
+}

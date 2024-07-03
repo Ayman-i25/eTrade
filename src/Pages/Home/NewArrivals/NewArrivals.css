@@ -1,0 +1,89 @@
+.newArrivals-section .card{
+    border: none !important;
+}
+.newArrivals-section .card-image {
+    overflow: hidden;
+    height: 276px;
+    width: 276px;
+    background: #f0f1f1;
+    border-radius: 50%;
+    cursor: pointer;
+}
+@media (max-width:768px) {
+    .newArrivals-section .card-image{
+        width: 200px;
+        height: 200px;
+    }
+}
+@media (max-width:576px) {
+    .newArrivals-section .card-image{
+        width: 250px;
+        height: 250px;
+    }
+}
+.newArrivals-section .card-image img {
+    transition: var(--transition);
+    height: 100%;
+    object-fit: contain;
+}
+
+.newArrivals-section .card-image:hover img {
+    transform: scale(1.1);
+}
+
+.newArrivals-section .button .btn{
+    box-shadow: 0 16px 32px 0 rgb(0 0 0 / 11%);
+}
+
+/* .newArrivals-section .card:hover .button {
+    opacity: 1;
+    bottom: 10px;
+} */
+
+.newArrivals-section .button div {
+    border-radius: 4px;
+    background-color: white;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+.newArrivals-section .button div:nth-of-type(2) {
+    background-color: var(--red-color);
+    color: white;
+
+}
+
+.newArrivals-section .button div:hover {
+    transform: scale(1.05);
+}
+
+.newArrivals-section .card .dis-Count{
+    position: absolute;
+    top: 30px;
+    right: -11px;
+}
+/* Swiper */
+.newArrivals-section .swiper {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.newArrivals-section .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    height: calc((100% - 30px) / 2) !important;
+    margin: 0 20px 40px 0 !important;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+}
+.newArrivals-section .swiper-wrapper{
+    flex-direction: row !important;
+}

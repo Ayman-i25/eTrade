@@ -1,0 +1,129 @@
+.prodcuts-section{
+    position: relative;
+    transition: var(--transition);
+}
+.prodcuts-section .product-color span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.prodcuts-section .card {
+    border: none !important;
+}
+
+.prodcuts-section .card-image {
+    overflow: hidden;
+    height: 200px;
+    background: #f5f7fb;
+}
+
+.prodcuts-section .card-image img {
+    transition: var(--transition);
+    height: 100%;
+    object-fit: contain;
+}
+
+.prodcuts-section .card:hover img {
+    transform: scale(1.1);
+}
+
+.prodcuts-section .button {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: var(--transition);
+    transform: translateX(-50%);
+
+}
+
+.prodcuts-section .card:hover .button {
+    opacity: 1;
+    bottom: 10px;
+}
+
+.prodcuts-section .button div {
+    border-radius: 4px;
+    background-color: white;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+.prodcuts-section .button div:nth-of-type(2) {
+    background-color: var(--red-color);
+    color: white;
+
+}
+
+.prodcuts-section .button div:hover {
+    transform: scale(1.05);
+}
+
+.prodcuts-section .card .dis-Count {
+    position: absolute;
+    top: 30px;
+    right: -11px;
+}
+
+/* icone hover */
+.prodcuts-section .icone {
+    position: relative;
+    z-index: 1;
+}
+
+.prodcuts-section .icone::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    transition: .2s all;
+    z-index: -1;
+}
+
+.prodcuts-section .icone:hover::before {
+    width: 40px;
+    height: 40px;
+    background-color: var(--red-color);
+}
+
+.prodcuts-section .icone:hover svg {
+    color: white !important;
+    cursor: pointer;
+
+}
+
+
+
+/* Swiper */
+.prodcuts-section .swiper {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.prodcuts-section .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    height: calc((100% - 30px) / 2) !important;
+    margin: 0 20px 40px 0 !important;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.prodcuts-section .swiper-wrapper {
+    flex-direction: row !important;
+}
+

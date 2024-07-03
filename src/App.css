@@ -1,0 +1,16 @@
+:root {
+    /* color */
+    --blue-color: #3577f0;
+    --red-color: #ff497c;
+    --muted-color: #777;
+    --border-color:#f1f1f1;
+
+    /*transition  */
+    --transition:.4s all ease-in-out;
+
+    /* border-radius */
+    --main-radius: 10px;
+}
+.App{
+    overflow: hidden;
+}

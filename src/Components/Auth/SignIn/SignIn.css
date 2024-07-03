@@ -1,0 +1,35 @@
+.signin-section .background {
+    background-image: url(../../../assets/imgs/dddepth-321.jpg);
+    height: 100vh;
+}
+
+.signin-section .background a {
+    color: var(--blue-color);
+    font-size: 30px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.signin-section form {
+    width: 400px;
+}
+
+.signin-section .form-label {
+    position: absolute;
+    top: -17px;
+    left: 19px;
+    background: white;
+    padding: 5px;
+    font-size: 14px;
+    color: var(--muted-color);
+}
+
+.signin-section .form-control {
+    padding: 15px !important;
+}
+.signin-section .form-control:focus{
+    box-shadow: none;
+}
+.signin-section .wrapper-right {
+    height: calc(100vh - 104px);
+}

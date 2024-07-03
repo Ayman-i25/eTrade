@@ -1,0 +1,7 @@
+.dont-miss-section {
+    background-color: #f6f7fb;
+    padding: 0 3rem 3rem 3rem;
+    border-radius: var(--main-radius);
+    position: relative;
+    z-index: 2;
+}

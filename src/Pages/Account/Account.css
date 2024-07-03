@@ -1,0 +1,84 @@
+.account-section {
+    img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+
+    span {
+        color: var(--muted-color);
+        font-size: 13px;
+    }
+
+    .profile-list {
+        li {
+            margin: 10px 0;
+            transition: .2s all;
+            cursor: pointer;
+            padding: 7px 0;
+            border-radius: var(--main-radius);
+
+            &:hover {
+                background-color: var(--border-color);
+
+                a,
+                svg {
+                    color: var(--blue-color);
+                }
+            }
+        }
+    }
+
+    a {
+        padding: 12px;
+        color: var(--muted-color);
+        font-size: 15px;
+        font-weight: 900;
+        transition: .2s all;
+    }
+
+    svg {
+        color: var(--muted-color);
+        font-size: 18px;
+        transition: .2s all;
+    }
+
+    button {
+        border: 1px solid var(--border-color);
+        background: white;
+        padding: 15px 25px;
+        margin: 4px;
+        border-radius: 6px;
+        /* width: 153px; */
+        font-size: 15px;
+        font-weight: 600;
+        transition: .3s all;
+
+        &:hover {
+            background-color: var(--blue-color);
+
+            a {
+                color: white !important;
+            }
+        }
+    }
+
+    .table {
+        min-width: 900px;
+
+        td,
+        th {
+            vertical-align: middle;
+        }
+    }
+
+    .addresses{
+        li{
+            color: var(--muted-color);
+            padding: 5px 0;
+            font-size: 15px;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.Categoris {
+  /* height: 100vh; */
+  transition: var(--transition);
+  
+}
+
+.Categoris .item {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  transition: var(--transition);
+}
+
+.Categoris .item:hover,
+.Categoris .item:active {
+  transform: scale(1.03);
+}
+
+.Categoris .item .image {
+  width: 60px;
+  height: 60px;
+}
+
+.Categoris .swiper {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden !important;
+  padding: 10px !important;
+}
+
+.Categoris .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Categoris .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,28 @@
+.privacypolicy-section h4 {
+    padding: 10px;
+    border-bottom: 2px solid var(--blue-color);
+}
+.privacypolicy-section h2 {
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.privacypolicy-section p {
+    color: var(--muted-color);
+}
+.privacypolicy-section ul li {
+    color: var(--muted-color);
+    position: relative;
+    padding: 5px 0;
+}
+.privacypolicy-section ul li::before{
+    position: absolute;
+    content: '';
+    left: -12px;
+    top: 50%;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--muted-color);
+    transform: translateY(-50%);
+}

@@ -1,0 +1,9 @@
+.disCount {
+    background-color: var(--blue-color);
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: rgb(0 48 255 / 14%) 0px 10px 15px -3px, rgb(1 122 255 / 33%) 0px 4px 6px -2px;
+    border-radius: 4px;
+}

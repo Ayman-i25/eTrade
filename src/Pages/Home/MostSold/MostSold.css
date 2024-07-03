@@ -1,0 +1,58 @@
+.mostSold-section{
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+.mostSold-section .card {
+    transition: .3s all;
+    border: 1px solid var(--border-color) !important
+}
+
+.mostSold-section .card .image {
+    border: var(--main-radius);
+    overflow: hidden;
+    height: 120px;
+    transition: .3s all;
+    background-color: #f5f7fb;
+}
+
+.mostSold-section .card img {
+    transition: .3s all;
+    height: 100%;
+    object-fit: contain;
+}
+
+.mostSold-section .card:hover img {
+    transform: scale(1.1);
+}
+
+.mostSold-section .card:hover {
+    border: 1px solid white !important;
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, .04);
+}
+
+.mostSold-section button {
+    border: 1px solid var(--border-color);
+    background: none;
+    padding: 6px;
+    margin: 4px;
+    border-radius: 6px;
+    width: 129px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: .3s all;
+}
+@media (max-width:576px) {
+    .mostSold-section button{
+        width: 100%;
+    }
+}
+.mostSold-section button svg {
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.mostSold-section button:hover {
+    background-color: var(--blue-color);
+    color: white;
+}

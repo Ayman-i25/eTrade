@@ -1,0 +1,72 @@
+.ViewedItems-section .card{
+    border: none !important;
+}
+.ViewedItems-section .card-image {
+    overflow: hidden;
+    height: 276px;
+    width: 276px;
+    background: #f0f1f1;
+    cursor: pointer;
+    border-radius: 50%;
+
+}
+@media (max-width:768px) {
+    .ViewedItems-section .card-image{
+        width: 200px;
+        height: 200px;
+    }
+}
+@media (max-width:576px) {
+    .ViewedItems-section .card-image{
+        width: 250px;
+        height: 250px;
+    }
+}
+.ViewedItems-section .card-image img {
+    transition: var(--transition);
+    height: 100%;
+    object-fit: contain;
+}
+
+.ViewedItems-section .card-image:hover img {
+    transform: scale(1.1);
+}
+
+
+
+
+.ViewedItems-section .card .dis-Count{
+    position: absolute;
+    top: 30px;
+    right: -11px;
+}
+
+.ViewedItems-section .product-color span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+/* Swiper */
+.ViewedItems-section .swiper {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ViewedItems-section .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    height: calc((100% - 30px) / 2) !important;
+    margin: 0 20px 40px 0 !important;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+}
+.ViewedItems-section .swiper-wrapper{
+    flex-direction: row !important;
+}

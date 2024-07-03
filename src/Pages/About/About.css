@@ -1,0 +1,137 @@
+.about-section p {
+    color: var(--muted-color);
+    margin: 0;
+    padding: 0;
+}
+
+.about-section .box-wrapper {
+    margin-top: 130px;
+    position: relative;
+}
+
+.about-section .box-wrapper .container::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 0;
+    background-color: #f8f8f8;
+    width: 100%;
+    height: 55%;
+    z-index: -1;
+}
+
+.about-section .box-wrapper .box {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: var(--radius);
+    background-color: white;
+    border: 1px solid transparent;
+    transition: .5s all;
+}
+
+.about-section .box-wrapper .box:hover {
+    border-color: var(--blue-color);
+}
+
+.about-section .our-team {
+    background-color: #f8f8f8;
+}
+
+.about-section .our-team .member {
+    width: 100%;
+}
+
+.about-section .our-team .member .text {
+    padding-left: 10px;
+}
+
+.about-section .our-team .member .text span {
+    color: var(--muted-color);
+    font-size: 15px;
+}
+
+.about-section .our-team .member .text h5 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.about-section .swiper {
+    width: 100%;
+    height: 100%;
+    padding: 10px !important;
+    overflow: visible;
+}
+
+.about-section .swiper-slide {
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius);
+}
+
+@media (min-width:1024px) {
+    .about-section .swiper-slide img {
+        height: 400px;
+    }
+}
+
+@media (max-width:768px) {
+    .about-section .swiper {
+        overflow: hidden;
+    }
+}
+
+.about-section {
+    .features {
+        img {
+            border-radius: 20px;
+            padding: 10px;
+            background: #f8f8f8;
+        }
+        .content {
+            span {
+                color: var(--muted-color);
+                font-size: 13px;
+                margin-top: 10px;
+            }
+            h3 {
+                font-weight: 700;
+                font-size: 30px;
+            }
+            p {
+                color: var(--muted-color);
+            }
+            a {
+                text-decoration: none;
+                color: black;
+                transition: .3s all;
+            }
+            button {
+                border: 1px solid var(--border-color);
+                background: none;
+                padding: 15px 25px;
+                margin: 4px;
+                border-radius: 6px;
+                /* width: 153px; */
+                font-size: 15px;
+                font-weight: 600;
+                transition: .3s all;
+                margin-top: 15px;
+                &:hover {
+                    background-color: var(--blue-color);
+                    a {
+                        color: white !important;
+                    }
+                }
+            }
+        }
+    }
+}

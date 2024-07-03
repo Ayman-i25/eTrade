@@ -1,0 +1,143 @@
+
+.allproducts-section .wrapper .cat-title{
+    padding: 8px;
+    /* border-bottom: 2px solid var(--blue-color); */
+    cursor: pointer;
+    margin-bottom: 15px;
+    background: #f0f1f1;
+    border-radius: 6px;
+    text-align: center;
+}
+.allproducts-section .wrapper .cat-title h4{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+}
+.allproducts-section .wrapper .cat-title svg{
+    transition: var(--transition);
+}
+.allproducts-section .wrapper input[type='radio']{
+    appearance: none;
+    display: none;
+}
+
+.allproducts-section .wrapper :where(.categoryies-wrapper, .gender-wrapper) label{
+    padding-left: 25px;
+    color: var(--muted-color);
+    position: relative;
+    cursor: pointer;
+    transition: .4s all;
+}
+.allproducts-section .wrapper :where(.categoryies-wrapper, .gender-wrapper) label::before{
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    left: 0;
+    border: 1px solid var(--muted-color);
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: .4s all;
+}
+.allproducts-section .wrapper :where(.categoryies-wrapper, .gender-wrapper) input[type='radio']:checked + label{
+    color: var(--blue-color);
+}
+.allproducts-section .wrapper :where(.categoryies-wrapper, .gender-wrapper) input[type='radio']:checked + label::before{
+    background-color: var(--blue-color);
+}
+
+.allproducts-section .wrapper :where(.size-wrapper, .price-wrapper) label{
+    position: relative;
+    color: var(--muted-color);
+    cursor: pointer;
+    transition: .4s all;
+    border: 1px solid #ccc;
+    border-radius: 13px;
+    padding: 5px;
+    margin: 5px;
+    min-width: 40px;
+    text-align: center;
+    font-size: 16px;
+}
+.allproducts-section .wrapper :where(.size-wrapper, .price-wrapper) input[type='radio']:checked + label{
+    border-color: var(--blue-color);
+    background-color: var(--blue-color);
+    color: white;
+}
+.allproducts-section .wrapper{
+    transition: .3s all;
+}
+.allproducts-section .wrapper .hidden{
+    display: none !important;
+    opacity: 1;
+    transition: .3s all;
+}
+
+
+
+.allproducts-section .product-color span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+.allproducts-section .card{
+    margin:  10px 0;
+    height: calc(100% - 20px);
+}
+.allproducts-section .card-image {
+    overflow: hidden;
+    height: 200px;
+    background: #f0f1f1;
+}
+
+.allproducts-section .card-image img {
+    transition: var(--transition);
+    height: 100%;
+    object-fit: contain;
+}
+
+.allproducts-section .card:hover img {
+    transform: scale(1.1);
+}
+
+.allproducts-section .button {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: var(--transition);
+    /* transform: translateX(-50%); */
+text-align: center;
+}
+
+.allproducts-section .card:hover .button {
+    opacity: 1;
+    bottom: 10px;
+}
+
+.allproducts-section .button div {
+    border-radius: 4px;
+    background-color: white;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+.allproducts-section .button div:nth-of-type(2) {
+    background-color: var(--red-color);
+    color: white;
+
+}
+
+.allproducts-section .button div:hover {
+    transform: scale(1.05);
+}
+
+.allproducts-section .card .dis-Count{
+    position: absolute;
+    top: 30px;
+    right: -11px;
+}
